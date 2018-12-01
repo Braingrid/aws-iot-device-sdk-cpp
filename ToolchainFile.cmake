@@ -6,13 +6,13 @@ SET(CMAKE_SYSTEM_NAME Generic)
 SET(CMAKE_SYSTEM_VERSION 1)
 
 # Specify toolchain directory
-SET(TOOLCHAIN_DIR /home/toolchain/dir/here/bin)
+SET(TOOLCHAIN_DIR /usr/bin)
 
 # Specify cross compilation target
-SET(TARGET_CROSS target-here)
+SET(TARGET_CROSS arm-linux-gnueabihf-)
 
 # Set compilers
-SET(CMAKE_CXX_COMPILER ${TOOLCHAIN_DIR}/${TARGET_CROSS}g++)
+SET(CMAKE_CXX_COMPILER ${TOOLCHAIN_DIR}/${TARGET_CROSS}g++-4.9)
 
 # Set linker
 SET(CMAKE_LINKER ${TOOLCHAIN_DIR}/${TARGET_CROSS}ld)
